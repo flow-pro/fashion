@@ -1,0 +1,319 @@
+@media (max-width: 1380px)
+  .container
+    max-width: 1100px
+    width: 95%   
+    &-hero
+      max-width: 1240px
+
+    
+
+@media (max-width: 1200px )
+  .container
+    max-width: 950px
+    min-width: 0
+    margin-bottom: 30px
+    &-hero
+      max-width: 1090px
+  .collection
+    &-wrapper
+      width: 100%
+      grid-gap: 0 25px
+    &__image
+      &-first
+        width: 100%
+        height: 100%
+        border-radius: 8px
+      &-second
+        width: 100%
+      &-third
+        width: 42%
+        object-fit: cover
+    &__title
+      margin-bottom: 20px
+    &__text
+      width: 100%
+      font-size: 18px
+      line-height: 30px
+    &__link
+
+
+
+@media (max-width: 1120px)
+  // .header
+  //   margin: auto
+  .container
+    width: 80%
+    margin-bottom: 30px
+    &-hero
+      max-width: 1140px
+      background-position: top left 57%
+  .hero  
+    &-wrapper
+      width: 60%
+      padding-left: 37px
+  .header
+    &-menu
+      height: 20px
+  .collection
+    &-wrapper
+      grid-gap: 0 23px
+    &__title
+      font-size: 46px
+      line-height: 58px
+      margin-bottom: 15px
+    &__link
+      padding-top: 12px
+      padding-bottom: 10px
+
+@media (max-width: 1020px)
+  .collection
+    &__link
+      align-self: end
+      padding: 0
+
+@media (max-width: 992px)
+  .hero
+    height: 624px
+    // padding: 0 30px
+    // !!!!!!!!!! ПОПРАВКА С ОТСТУПОМ ПО КРАЯМ РАСШИРЯЕТ HERO картинку
+    &-wrapper
+      max-width: 620px
+      padding-top: 40px
+      padding-left: 28px
+      padding-bottom: 36px
+    &__link
+      margin-bottom: 30px
+      padding: 6px 16px 6px 16px     
+    &__title
+      // РОДНОЙ РАЗМЕР ШРИФТОВ
+      // font-size: 56px
+      // line-height: 68px
+      font-size: 54px
+      line-height: 66px   
+      margin-bottom: 20px
+      margin-top: 24px
+    &__button
+      &-second
+        margin-bottom: 40px     
+    &__ul
+      width: 100%
+    &__item
+      font-family: HK Grotesk
+
+  .container
+    max-width: 800px
+    margin: auto
+  //   ОН ВЫШЕ = 800пк -НЕ ДЕЛАТЬ ШИРИНУ КОНТЕЙНЕРА МЕНЬШЕ!!!
+    margin-bottom: 30px
+    &-hero
+      width: 100%  
+      height: 624px
+      margin: auto
+      background-position: top left 57%
+
+  .header
+    &-wrapper
+      width: 100%
+      padding: 0
+      padding: 18px 0
+      // margin-bottom: 30px
+    &-menu
+      width: 70%
+      &__item,   &__button
+        font-size: 15px
+        line-height: 20px
+  
+  .collection
+    padding-top: 80px
+    padding-bottom: 80px
+    &-wrapper
+      display: grid
+      grid-template-columns: repeat(2, minmax(322px, 1fr))
+      grid-template-rows: repeat(5, minmax(min-content, 33%))
+      grid-gap: 0 30px
+      padding-left: 61px
+      padding-right: 61px
+    &__image
+      &-first
+        grid-row: span 2
+        grid-column: 1
+        width: 100%
+        // margin-left: 61px
+        
+      &-second
+        grid-row: 1
+        grid-column: 2
+        width: 100% 
+      &-third
+        grid-row: 2
+        grid-column: 2
+        width: 100%
+    &__title
+      grid-row: 4
+      grid-column: 1 / 3
+      align-self: start
+      justify-content: start
+      margin-bottom: 18px
+      margin-top: 40px 
+      font-size: 48px
+      line-height: 60px
+    &__text
+      grid-row: 5
+      grid-column: 1 / 3
+      width: 100%
+      align-self: start
+      justify-content: start 
+      font-size: 20px
+      line-height: 36px
+      margin-bottom: 30px
+    &__link
+      grid-row: 6
+      grid-column: 1 / 3
+
+
+      // display: grid
+      // grid-template-columns: repeat(3, minmax(138, 33%))
+      // grid-template-rows: repeat(3, minmax(min-content, 25%))
+      // grid-gap: 0 30px
+  
+    // .header
+    //   &--mobile
+    //     &_fixed
+    //       padding-right: 0 
+
+@media (max-width: 900px)
+  .container
+    &-hero
+      width: 100%
+      margin: auto
+      background-position: top left 65%
+  .hero
+    &__title
+      // РОДНОЙ РАЗМЕР ШРИФТОВ
+      // font-size: 56px
+      // line-height: 68px
+      // letter-spacing: 0.2px
+      font-size: 47px
+      line-height: 59px
+
+@media (max-width: 799px)
+  .hero
+    &__title
+      font-size: 45px
+      line-height: 57px
+
+@media (max-width: 790px)
+  .hero
+    &__text
+      font-size: 19px
+      line-height: 36px
+
+
+@media (max-width: 768px)
+  .hero
+    margin-top: 105px
+
+  .container
+    width: 648px
+    padding-bottom: 32px
+    // padding-right: 20px
+    // padding-left: 20px
+    &-hero
+      max-width: 728px
+      margin-top: 0
+      background-image: url(../img/hero-image-cut.png)
+      background-position: top
+  .header
+    &-wrapper  
+      width: 100%   
+      padding-left: 0
+      padding-right: 0
+    &--mobile
+      &_fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 99
+        background-color: #fff
+        // padding-left: 59px
+        // padding-right: 59px
+    &-menu
+      display: none
+      position: fixed
+      top: 94px
+      left: 0
+      right: 0
+      bottom: 0
+      background-color: #fff
+      padding: 36px 24px
+      max-width: 304px
+      height: 322px
+      &__item
+        padding-bottom: 20px
+      &__button
+        width: 100%
+      &--visible
+        display: block
+    &-wrapper
+      margin: 0
+   
+  .menu
+    &-button
+      margin-top: 5px
+      padding: 0
+      height: 17.7px
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: space-between
+      background-color: #fff
+      &__line
+        width: 22px
+        height: 2.2px
+        background: #3A4C66
+
+@media (max-width: 320px)
+  .container
+    &-hero
+      max-width: 320px
+      height: 899px
+      background-image: url(../img/hero-image-girl.png)
+      background-position: left 0  top 0 bottom 0
+      // background-repeat: no-repeat
+  .hero
+    // overflow-x: hidden
+    
+    // display: flex
+    padding-left: 0
+    padding-right: 0
+    // margin-top: 94px
+    // // align-items: end
+    &-wrapper
+      // width: 100%
+      padding-left: 0
+      padding-right: 0
+   
+     
+    
+//       // max-width: 381px
+//       // padding: 381px 24px 
+//     &__title
+//       width: 100%
+//       font-size: 32px
+//       line-height: 40px
+//       text-align: center
+//     &__text
+//       font-size: 16px
+//       line-height: 28px
+//       text-align: center
+
+
+  
+
+  
+
+  
+      
+
+  

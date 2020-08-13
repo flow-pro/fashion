@@ -1,0 +1,97 @@
+.container
+  &-hero
+    max-width: 1280px
+    min-height: 700px
+    margin: auto
+    background-image: url(../img/hero-image.png)
+    background-position: center
+    background-repeat: no-repeat
+   
+.hero
+  margin: auto
+  // padding: 0 80px
+  &-wrapper
+    max-width: 652px
+    padding-top: 62px
+    padding-left: 107px
+    padding-bottom: 46px
+  &__link
+    position: relative
+    margin-bottom: 28px
+    padding: 6px 16px 6px 15px
+    width: 175px
+    height: 32px
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    text-align: center
+    color: #36B37E
+    &::before   
+      position: absolute
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0   
+      background: #36B37E
+      opacity: 0.1
+      border-radius: 2000px
+  &__title
+    margin-bottom: 28px
+    // font-family: HK Grotesk-BoldLegacy
+    font-style: normal
+    font-weight: bold
+    font-size: 56px
+    line-height: 68px
+    letter-spacing: 0.2px
+    color: $first
+  &__text
+    margin-bottom: 52px
+    margin-top: 0
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $second
+  &__button
+    &-second
+      margin-bottom: 48px
+      padding: 16px 24px 15px
+      border: none
+      width: 233px
+      border-radius: 8px
+      background-color: $first
+      color: #ffffff
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 25px
+      text-align: center
+  &__item
+    // font-family: HK Grotesk
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.2px
+    color: $first
+    display: flex
+    flex-direction: row
+    
+    align-items: center
+  &__icon
+    // border: 0.75px solid #1565D8
+    // border-radius: 12px
+    margin-right: 8px
+  &__ul
+    padding: 0
+    margin: 0
+    max-width: 427px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
